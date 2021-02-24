@@ -1,5 +1,6 @@
 import _ from 'lodash'
 import './style.css'
+import './style.scss'
 import img from './haikei.jpg'
 
 function component() {
