@@ -1,20 +1,8 @@
-import _ from 'lodash'
-import './style.css'
-import './style.scss'
-import img from './haikei.jpg'
+import React from 'react'
+import ReactDom from 'react-dom'
 
-function component() {
-  const element = document.createElement('div')
-  const array = ['hello', 'webpack', '!']
-  element.innerHTML = _.join(array, ' ')
-  return element
-}
+ReactDom.render(
+  <div>Hello, React</div>,
+  document.getElementById('root')
+)
 
-document.body.appendChild(component())
-
-document.body.classList.add('haikei')
-
-const image = new Image()
-image.src = img
-
-document.body.appendChild(image)
