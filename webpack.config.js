@@ -61,5 +61,6 @@ module.exports = {
     minimizer: [
       new OptimizeCssAssetsWebpackPlugin({}),
     ],
-  }
+  },
+  devtool: 'eval-source-map',
 }
